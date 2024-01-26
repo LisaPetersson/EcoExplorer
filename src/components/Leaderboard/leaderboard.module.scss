@@ -1,0 +1,22 @@
+@import "../../styles/index.scss";
+
+.leaderBoard {
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+  gap: $medium;
+  width: 100%;
+  max-width: 500px;
+  > .myPlace {
+    > p {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+  > .topPlace ol {
+    @include flex(column, center, flex-start);
+    margin-left: 40px;
+    > li {
+      font-size: var(--fontSizeSubheader);
+    }
+  }
+}

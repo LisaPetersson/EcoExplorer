@@ -1,0 +1,66 @@
+@import "../../styles/index.scss";
+
+.signup {
+  max-width: 600px;
+  > form {
+    > div {
+      width: 100%;
+      margin-bottom: $medium;
+      position: relative;
+      > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 30px;
+        margin-right: 10px;
+        opacity: 50%;
+        cursor: pointer;
+        // border: 2px solid red;
+        z-index: 999;
+        width: auto;
+      }
+      > label {
+        margin-bottom: $Xsmall;
+      }
+      > input {
+        margin-bottom: 0;
+      }
+      > div {
+        @include flex(row, flex-start, flex-start);
+        flex-wrap: wrap;
+        > small {
+          // opacity: 75%;
+          @include flex(row, flex-end, center);
+          > img {
+            margin: 0;
+            width: auto;
+            opacity: 50%;
+          }
+        }
+      }
+      > .verifyInput {
+        gap: $small;
+        margin-top: $small;
+      }
+    }
+    > button {
+      margin-bottom: $medium;
+      margin-top: $medium;
+    }
+  }
+  > button {
+    width: 100%;
+  }
+  > h2 {
+    align-self: flex-start;
+  }
+  > p {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .signup {
+    text-align: left;
+  }
+}

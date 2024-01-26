@@ -1,0 +1,68 @@
+@import "../../styles/index.scss";
+
+.categoriesSection {
+  > h1 {
+    color: $white;
+  }
+  > .categoriesContainer {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    gap: $large;
+  }
+}
+.categories {
+  @include flex(column, center, center);
+  gap: $small;
+  position: relative;
+  background-color: transparent;
+  min-width: 175px;
+  &:hover {
+    background-color: transparent;
+  }
+  > .active {
+    opacity: 100%;
+    transition: transform 0.25s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  > .comingSoon {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 135px;
+    transform: rotate(20deg);
+    background-color: $primary;
+    color: $white;
+    padding: $XXsmall $small;
+    border-radius: $borderRadiusSmall;
+    opacity: 100%;
+  }
+  > p {
+    margin: 0;
+    padding: 0;
+  }
+  > img {
+    width: 125px;
+    margin: 0;
+    opacity: 25%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .categories {
+    min-width: 125px;
+    > img {
+      width: 80px;
+      margin: 0;
+      opacity: $opacity;
+    }
+
+    > .comingSoon {
+      left: 5%;
+      width: 125px;
+      transform: rotate(10deg);
+    }
+  }
+}

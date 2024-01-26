@@ -1,0 +1,178 @@
+@import "../../styles/index.scss";
+
+.settingsSection {
+  @include glass();
+  @include flex(column, space-between, center);
+  width: 1000px;
+  background: rgba(250, 250, 250, 0.13);
+  // background: rgba(58, 58, 58, 0.55);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 2rem;
+  padding: $large;
+  max-width: 95vw;
+  > button {
+    align-self: flex-end;
+  }
+  > div {
+    @include flex(column, space-between, center);
+    gap: $medium;
+  }
+
+  > div > .toggle {
+    border-radius: 50px;
+    display: flex;
+    width: 50%;
+    min-width: 350px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #5e5e5e;
+    > button {
+      width: 50%;
+      border-radius: 50px;
+      font-size: 18px;
+      background-color: transparent;
+      z-index: 1;
+    }
+  }
+  .slideBackground {
+    position: absolute;
+    background-color: $secondary;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .slideBackground.font {
+    transform: translateX(0%);
+  }
+
+  .slideBackground.profile {
+    transform: translateX(100%);
+  }
+}
+.topSection {
+  width: 100%;
+  @include flex(row, space-between, center);
+  > h2 {
+    text-align: center;
+    flex-grow: 1;
+  }
+}
+.active {
+  opacity: 100% !important;
+  background-color: $secondary !important;
+}
+
+.fontSection {
+  @include flex(row, space-between, flex-start);
+  flex-wrap: wrap;
+  margin-top: $medium;
+  > div {
+    @include flex(column, space-between, flex-start);
+    gap: $medium;
+    width: 50%;
+  }
+  > .fontButtons {
+    > div {
+      @include flex(column, flex-start, flex-start);
+      gap: $small;
+
+      > p {
+        margin: 0;
+      }
+      > div {
+        @include flex(row, flex-start, center);
+        gap: $small;
+        flex-wrap: wrap;
+        > button {
+          border-radius: 50px;
+          height: 50px;
+          background-color: #5e5e5e;
+          @include flex(row, center, center);
+        }
+      }
+    }
+  }
+  > .test {
+    gap: $small;
+    background-color: $white;
+    padding: $medium;
+    border-radius: $borderRadiusSmall;
+    min-width: 300px;
+    color: black;
+    text-shadow: none;
+    > div {
+      @include flex(row, space-between, center);
+      flex-wrap: wrap;
+      gap: $small;
+      width: 100%;
+      > button {
+        width: 45%;
+      }
+    }
+  }
+}
+
+.settingsProfile {
+  @include flex(row, center, flex-start);
+  flex-wrap: wrap;
+  margin-top: 5%;
+  > * {
+    width: 45%;
+    min-width: 300px;
+  }
+  > form {
+    @include flex(column, flex-start, flex-start);
+    gap: $small;
+    > div {
+      @include flex(row, flex-start, flex-start);
+      gap: $medium;
+      > input {
+        min-width: 200px;
+        &::placeholder {
+          color: rgb(37, 37, 37);
+        }
+      }
+    }
+    > button {
+      width: 275px;
+    }
+  }
+  > div {
+    @include flex(column, flex-start, flex-start);
+    gap: $small;
+    width: 50%;
+    > div {
+      margin-bottom: $large;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .settingsSection {
+    transform: translate(-0%, -0%);
+    position: static;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: $large;
+    max-width: 95vw;
+    > button {
+      margin-top: $large;
+    }
+  }
+  .fontSection {
+    gap: $large;
+    > div {
+      width: 100%;
+    }
+  }
+}

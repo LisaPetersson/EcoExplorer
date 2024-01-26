@@ -1,0 +1,88 @@
+@import "../../styles/index.scss";
+
+header {
+  @include glass();
+  border-radius: 0;
+  min-width: 100vw;
+  > .container {
+    @include flex(row, space-between, center);
+    padding: $medium 6rem $medium 6rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    > button {
+      color: $primary;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 1.5rem;
+      font-weight: 700;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    > div {
+      > button {
+        color: $white;
+      }
+      > .registerBtn {
+        margin-right: $medium;
+      }
+    }
+  }
+}
+
+.drawer {
+  height: 100%;
+  padding: $XLarge;
+  @include glass();
+  border-radius: 0;
+  > ul {
+    list-style: none;
+    @include flex(column, flex-start, flex-start);
+    gap: $large;
+    > li {
+      cursor: pointer;
+      @include flex(row, center, center);
+      gap: $Xsmall;
+      padding: $small;
+      border: 2px solid transparent;
+      > img {
+        width: 25px;
+        padding: 0;
+        margin: 0;
+        > svg > path {
+          stroke: $white;
+        }
+      }
+      > button {
+        background-color: transparent;
+        width: auto;
+        text-shadow: $textShadow;
+        // font-weight: 700;
+        font-size: 1.25rem;
+        color: $white;
+      }
+      &:hover {
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: $borderRadiusSmall;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  header {
+    margin-bottom: $large;
+    // padding: 0 $large 0 $medium;
+    padding: 0;
+    > .container {
+      padding: $small;
+      > h2 {
+        font-size: 2rem;
+      }
+      > div > button {
+        display: none;
+      }
+    }
+  }
+}

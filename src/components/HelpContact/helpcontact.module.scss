@@ -1,0 +1,110 @@
+@import "../../styles/index.scss";
+
+.helpContact {
+  @include glass();
+  background: rgba(250, 250, 250, 0.13);
+  width: 750px;
+  max-width: 750px;
+  max-width: 95vw;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: $large;
+  > .topSection {
+    @include flex(row, space-between, space-between);
+    > h1 {
+      color: $white;
+    }
+  }
+  > .contentContainer {
+    @include flex(row, flex-start, center);
+    gap: $large;
+    > .info {
+      @include flex(column, center, flex-start);
+      gap: $medium;
+      max-width: 75%;
+      > article {
+        > p {
+          margin: 0;
+          > a {
+            color: rgb(101, 173, 255);
+          }
+        }
+      }
+      > .faq {
+        width: 100%;
+        > h3 {
+        }
+        > * {
+          text-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.avatars {
+  position: relative;
+  @include flex(column, center, center);
+  gap: $medium;
+  > div > p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    margin-top: -15px;
+    font-weight: 600;
+  }
+  .avatarOne {
+    transform: rotate(-20deg);
+    > img {
+      width: 100px;
+    }
+  }
+  > .avatarTwo {
+    transform: rotate(20deg);
+    > img {
+      width: 115px;
+    }
+    > p {
+      left: 0;
+      font-size: 2.5rem;
+      margin-left: 10px;
+    }
+  }
+  > .avatarThree {
+    transform: rotate(-10deg);
+    > img {
+      width: 85px;
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .helpContact {
+    margin-top: 75px;
+    > .contentContainer {
+      @include flex(column, flex-start, flex-start);
+      gap: $large;
+      width: 100%;
+      > .info {
+        @include flex(column, center, flex-start);
+        gap: $medium;
+        max-width: 100%;
+        > article {
+          > p {
+            margin: 0;
+          }
+        }
+        > .faq {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .avatars {
+    @include flex(row, space-around, space-between);
+  }
+}

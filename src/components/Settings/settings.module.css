@@ -1,0 +1,410 @@
+:root {
+  --font: "Poppins", serif;
+  --fontSizeHeader: 2rem;
+  --fontSizeSubheader: 1.25rem;
+  --fontSizeP: 1rem;
+  --fontSizeSmall: 0.75rem;
+  --letterSpacing: normal;
+  --wordSpacing: normal;
+  --backgroundImage: url(/src/assets//background/pexels-matthew-leland-822528.jpg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(36, 36, 36);
+  background-image: url(/src/assets/background/woods-min_1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-family: var(--font);
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+  color: #eeeeee;
+}
+
+button {
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+}
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper,
+.css-1ab2xsx {
+  background-color: transparent !important;
+}
+
+main {
+  padding: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80dvh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main > section {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 80%;
+  text-shadow: 1px 1px 5px #000000;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem;
+  background-color: #353535;
+  color: #eeeeee;
+  width: 125px;
+  font-size: 1rem;
+}
+button:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.primarybtn {
+  background-color: #08594a;
+}
+.primarybtn:hover {
+  background-color: #063c32;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: var(--fontSizeHeader);
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+h3,
+h4 {
+  font-size: var(--fontSizeSubheader);
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--fontSizeP);
+}
+
+small {
+  font-size: var(--fontSizeSmall);
+}
+
+strong {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+form button {
+  width: 100%;
+}
+form button:disabled {
+  opacity: 50%;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #353535;
+}
+
+::-webkit-scrollbar {
+  background: #353535;
+  width: 12.5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(173, 173, 173);
+  border-radius: 10px;
+}
+
+.score {
+  transition: color 1s ease-out;
+}
+.score.increase {
+  color: rgb(114, 255, 114);
+}
+.score.decrease {
+  color: rgb(255, 116, 97);
+}
+
+@media screen and (max-width: 710px) {
+  main {
+    padding: 1rem;
+    gap: 2rem;
+    text-align: center;
+    min-height: 80dvh;
+    max-width: 100vw;
+  }
+  main > section {
+    gap: 1rem;
+    padding: 1rem;
+    width: 95%;
+  }
+}
+.settingsSection {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  background: rgba(250, 250, 250, 0.13);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 2rem;
+  padding: 2rem;
+  max-width: 95vw;
+}
+.settingsSection > button {
+  align-self: flex-end;
+}
+.settingsSection > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.settingsSection > div > .toggle {
+  border-radius: 50px;
+  display: flex;
+  width: 50%;
+  min-width: 350px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #5e5e5e;
+}
+.settingsSection > div > .toggle > button {
+  width: 50%;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: transparent;
+  z-index: 1;
+}
+.settingsSection .slideBackground {
+  position: absolute;
+  background-color: #353535;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+  transition: transform 0.3s ease;
+}
+.settingsSection .slideBackground.font {
+  transform: translateX(0%);
+}
+.settingsSection .slideBackground.profile {
+  transform: translateX(100%);
+}
+
+.topSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topSection > h2 {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.active {
+  opacity: 100% !important;
+  background-color: #353535 !important;
+}
+
+.fontSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.fontSection > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 50%;
+}
+.fontSection > .fontButtons > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.fontSection > .fontButtons > div > p {
+  margin: 0;
+}
+.fontSection > .fontButtons > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.fontSection > .fontButtons > div > div > button {
+  border-radius: 50px;
+  height: 50px;
+  background-color: #5e5e5e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fontSection > .test {
+  gap: 0.5rem;
+  background-color: #eeeeee;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 300px;
+  color: black;
+  text-shadow: none;
+}
+.fontSection > .test > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+.fontSection > .test > div > button {
+  width: 45%;
+}
+
+.settingsProfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.settingsProfile > * {
+  width: 45%;
+  min-width: 300px;
+}
+.settingsProfile > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.settingsProfile > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.settingsProfile > form > div > input {
+  min-width: 200px;
+}
+.settingsProfile > form > div > input::-moz-placeholder {
+  color: rgb(37, 37, 37);
+}
+.settingsProfile > form > div > input::placeholder {
+  color: rgb(37, 37, 37);
+}
+.settingsProfile > form > button {
+  width: 275px;
+}
+.settingsProfile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 50%;
+}
+.settingsProfile > div > div {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 710px) {
+  .settingsSection {
+    transform: translate(0%, 0%);
+    position: static;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2rem;
+    max-width: 95vw;
+  }
+  .settingsSection > button {
+    margin-top: 2rem;
+  }
+  .fontSection {
+    gap: 2rem;
+  }
+  .fontSection > div {
+    width: 100%;
+  }
+}/*# sourceMappingURL=settings.module.css.map */

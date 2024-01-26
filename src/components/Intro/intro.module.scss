@@ -1,0 +1,51 @@
+@import "../../styles/index.scss";
+
+.intro {
+  @include flex(column, center, center);
+  gap: $medium;
+  text-align: center;
+  max-width: 95vw;
+  width: 750px;
+  > div:first-child {
+    @include flex(column, center, center);
+    max-width: 80%;
+    > .container {
+      @include flex(column, center, center);
+      background-color: #ffffff;
+      border-radius: $medium;
+      width: 100%;
+      gap: $small;
+      padding: 0;
+      color: black;
+      text-shadow: none;
+      > h1 {
+        padding: $medium;
+        margin-bottom: $medium;
+      }
+      > img {
+        min-width: 100%;
+        border-radius: $medium $medium 0 0;
+        margin-bottom: 1%;
+        // border: 2px solid red;
+      }
+    }
+  }
+  > button {
+    width: 100%;
+  }
+  .circles {
+    @include flex(row, center, center);
+    gap: $medium;
+    margin: 0.5% 0% 1.5% 0%;
+    > button {
+      border-radius: 50%;
+      width: 15px;
+      background-color: gray;
+      opacity: $opacity;
+      height: 15px;
+    }
+    > .active {
+      opacity: 100%;
+    }
+  }
+}

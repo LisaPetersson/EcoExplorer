@@ -1,0 +1,149 @@
+@import "../../styles/index.scss";
+
+.question {
+  background-color: $white;
+  border-radius: $borderRadiusSmall;
+  padding: $medium;
+  max-width: 95%;
+  color: black;
+  text-shadow: none;
+  > div {
+    @include flex(column, flex-start, flex-start);
+    gap: $large;
+    > .top_section {
+      @include flex(row, space-between, flex-start);
+      margin-bottom: $large;
+    }
+
+    > div > audio {
+      width: 100%;
+    }
+    > .questionContainer {
+      gap: $medium;
+    }
+    > div {
+      @include flex(row, flex-start, center);
+      gap: $small;
+      flex-wrap: wrap;
+      > img {
+        margin: 0 auto;
+        margin-bottom: $medium;
+        border-radius: $small;
+        width: 80%;
+      }
+      width: 100%;
+      > button {
+        width: 100%;
+      }
+    }
+    > .feedback {
+      @include flex(row, flex-start, flex-start);
+      gap: $large;
+      > img {
+        width: 300px;
+        margin: 0;
+        border-radius: $borderRadiusSmall;
+      }
+      > div {
+        width: 50%;
+        @include flex(column, flex-start, flex-start);
+        gap: $medium;
+        // font-size: 1.25rem;
+        > div {
+          @include flex(row, flex-start, flex-start);
+          gap: $small;
+        }
+      }
+      > .source {
+        width: 100%;
+      }
+    }
+  }
+  .nextQuestion {
+    // align-self: flex-end;
+    @include flex(row, flex-end, center);
+    width: 100%;
+    flex-direction: row;
+    > div {
+      align-self: flex-end;
+      justify-self: flex-end;
+      @include flex(row, center, center);
+      gap: $medium;
+      > button {
+        width: 125px;
+      }
+      > a {
+        margin-top: 0;
+      }
+    }
+  }
+  > .endQuiz {
+    @include flex(column, center, center);
+    > img {
+      width: 90%;
+      border-radius: $borderRadiusSmall;
+    }
+    > button {
+      width: 100%;
+    }
+  }
+}
+
+.thisQuestion {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.saveBtn {
+  color: black;
+  text-decoration: underline;
+  margin-top: $medium;
+}
+
+.hideBtn {
+  display: none;
+}
+
+@media screen and (max-width: 985px) {
+  .question {
+    > div {
+      gap: $small;
+      > .top_section {
+        margin-bottom: $medium;
+      }
+      > div {
+        gap: $small;
+        flex-wrap: wrap;
+        width: 100%;
+        > button {
+          width: 100%;
+        }
+      }
+      > .feedback {
+        @include flex(column, center, center);
+        gap: $large;
+        > img {
+          width: 50%;
+        }
+        > div {
+          width: 100%;
+        }
+      }
+    }
+    .nextQuestion {
+      align-self: flex-end;
+      width: 100%;
+      margin-top: $large;
+    }
+    > .endQuiz {
+      @include flex(column, center, center);
+      > img {
+        width: 90%;
+        border-radius: $borderRadiusSmall;
+      }
+      > button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../styles/index.scss";
+
+.avatarContainer {
+  width: 100%;
+  > p {
+    margin-bottom: $Xsmall;
+  }
+  > div {
+    // border: 2px solid red;
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    gap: $Xsmall;
+    padding: $small;
+    border-radius: $borderRadiusLarge;
+    background-color: $white;
+    > button {
+      border-radius: 0px;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      width: auto;
+      &:hover {
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>")
+            16 0,
+          auto;
+        opacity: 100%;
+      }
+      > img {
+        opacity: 25%;
+        width: 60px;
+        margin: 0;
+        &:hover {
+          opacity: 100%;
+        }
+      }
+      .active {
+        opacity: 100%;
+      }
+    }
+  }
+}

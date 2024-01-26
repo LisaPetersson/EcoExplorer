@@ -1,0 +1,13 @@
+@import "../../styles/index.scss";
+
+.about {
+  gap: $medium;
+  > div {
+    max-width: 650px;
+    background-color: $white;
+    padding: $medium;
+    border-radius: $borderRadiusSmall;
+    color: black;
+    text-shadow:none;
+  }
+}
