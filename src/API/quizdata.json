@@ -1,0 +1,215 @@
+{
+  "category": {
+    "number": 1,
+    "name": "Världens hav",
+    "questions": 10
+  },
+  "questions": [
+    {
+      "number": 1,
+      "introduction": "Läs texten och titta på grafen Medeltemperaturen har under de senaste 100 åren ökat med drygt 0,7 grader. I klimatsammanhang ses detta som en stor och snabb ökning. Havet har historiskt sett spelat en viktig roll i att stabilisera klimatet genom att lagra värme. Under de senaste 50 åren har haven absorberat över 90 procent av den temperaturökning som klimatförändringarna har orsakat. Detta gör nu att haven idag är under stor press och genomgår stora förändringar.",
+      "question": "Hur har havet historiskt sett hjälpt till att hålla klimatet stabilt på jorden?",
+      "incorrect_answers": [
+        "Havet kyler ner jorden när det behövs",
+        "Havet fryser till is på vintern",
+        "Det mesta av allt regn hamnar i havet"
+      ],
+      "correct_answer": "De ökade temperaturerna har lagrats i havet",
+      "feedback": "Havet har under de senaste 50 åren “sugit upp” över 90 procent av den ökade temperaturen klimatförändringarna orsakat.",
+      "source": "https://www.havet.nu/klimat-i-forandring",
+      "sourceDescription": "Klimat i förändring.",
+      "media": {
+        "diagram": "temperatures",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
+    },
+    {
+      "number": 2,
+      "introduction": "I Norden beror vårt klimat  på att Golfströmmen för med sig varmare vatten från sydligare breddgrader och värmer upp våra länder här uppe i norr. På grund av klimatförändringarna i havet ser forskarna att Golfströmmen rör sig långsammare och hotar att sluta röra sig. Det skulle få stora konsekvenser, inte bara för havet i sig utan för alla som bor i närheten av Golfströmmen.",
+      "question": "Vad skulle hända hos oss i Norden om Golfströmmen slutade röra sig?",
+      "incorrect_answers": [
+        "Det skulle bli varmare temperaturer",
+        "Vattnet i åar skulle börja strömma åt andra hållet",
+        "Östersjön skulle få högre salthalt"
+      ],
+      "correct_answer": "Det skulle bli kallare temperaturer",
+      "feedback": "Temperaturen i Norden skulle sjunka utan Golfströmmen, eftersom den för med sig varmt vatten upp till oss i norr. Det gör att vårt klimat blir varmare. Utan Golfströmmen skulle det kunna bli -50 grader på vintern i vissa delar av Sverige, och även torrare somrar.",
+      "source": "https://www.havet.nu/orovackande-rapport-om-golfstrommen- ",
+      "sourceDescription": "Oroväckande rapport om golfströmmen.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
+    },
+    {
+      "number": 3,
+      "introduction": "Det är i haven som de mest påtagliga effekterna av klimatförändringarna syns. En av de mest påtagliga konsekvenserna är den stigande havsnivån. Uppvärmning av haven, ökad volym av havsvatten och avsmältning av glaciärer och inlandsisar är de främsta orsakerna till detta fenomen. Haven täcker 71 procent av jordens yta och skapar över hälften av allt syre i atmosfären, vilket är det vi behöver för att kunna andas. Haven tar upp cirka 30 procent av luftens koldioxid, vilket är det vi andas ut.",
+      "question": "Vad händer i havet när glaciärer och inlandsisar smälter?",
+      "incorrect_answers": [
+        "Det blir fler vulkanutbrott på Island",
+        "Det blir för lite fisk i havet",
+        "Det blir kallare i vattnet"
+      ],
+      "correct_answer": "Havsnivån stiger",
+      "feedback": " Det blir mer havsvatten när isarna smälter, och det gör att havsnivån blir högre. Det i sin tur gör att människor och djur som bor nära havet kan bli tvingade att flytta eftersom deras hem och åkrar blir översvämmade. Isarna kyler också ner jordklotet. När de försvinner blir det varmare och vädret mer extremt. Detta är också en orsak till att människor måste fly från sina hem. Många klimatflyktingar har ingenstans att ta vägen",
+      "source": [
+        "https://www.naturskyddsforeningen.se/artiklar/andrat-klimat-driver-manniskor-pa-flykt/",
+        "https://www.greenpeace.org/sweden/artiklar/hav/arktis-hot/"
+      ],
+      "sourceDescription": "Ändrat klimat driver människor på flykt.",
+      "media": {
+        "diagram": "sealevel",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
+    },
+    {
+      "number": 4,
+      "introduction": null,
+      "question": "Hur mycket har den globala medeltemperaturen ökat under den senaste 100-årsperioden?",
+      "incorrect_answers": [
+        "Ungefär 2 grader",
+        "Ungefär 1,5 grader",
+        "Ungefär 0,2 grader"
+      ],
+      "correct_answer": "Ungefär 0,7 grader",
+      "feedback": "Medeltemperaturen har ökat med drygt 0,7 grader, vilket är en stor och snabb ökning.",
+      "source": "https://www.so-rummet.se/kategorier/geografi/klimat#",
+      "sourceDescription": "SO-rummet: Klimat.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
+    },
+    {
+      "number": 5,
+      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
+      "question": "1 av 3. Vad är växthuseffekten?",
+      "incorrect_answers": [
+        "Det som sker i molnen när det regnar",
+        "Det som gör att vi har klimatförändringar",
+        "Ett annat ord för sommarväder"
+      ],
+      "correct_answer": "En process som gör att all jordens värme inte åker ut i rymden",
+      "feedback": "Växthuseffekten är en naturlig process vi behöver på jorden för att inte all värme ska åka rakt ut i rymden utan istället stanna i vår atmosfär. Utan den skulle det vara så kallt på jorden att ingenting kunde leva här. Problemet är den förstärkta växthuseffekten som är skapad av oss människor. Den innebär att vi släpper ut för mycket växthusgaser i atmosfären, vilket gör att lagret växthusgaser blir för tjockt och för mycket värme stannar kvar på jorden.",
+      "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
+      "sourceDescription": "Global uppvärmning, orsaker, konsekvenser och lösningar.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": "podcast",
+        "image": false
+      }
+    },
+    {
+      "number": 6,
+      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
+      "question": "2 av 3. Vilken är den viktigaste orsaken till den globala uppvärmningen?",
+      "incorrect_answers": [
+        "Donald Trumps lögner",
+        "Havsnivån stiger",
+        "Solens strålar släpps igenom för mycket genom atmosfären"
+      ],
+      "correct_answer": "Vi släpper ut för mycket växthusgaser",
+      "feedback": "Vi släpper ut för mycket växthusgaser i atmosfären. Dessa gaser är till exempel koldioxid och metangas. Detta gör vi genom bland annat genom en väldigt stor boskapsuppfödning, samt elda olja och naturgaser.",
+      "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
+      "sourceDescription": "Global uppvärmning, orsaker, konsekvenser och lösningar.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": "podcast",
+        "image": false
+      }
+    },
+    {
+      "number": 7,
+      "introduction": "Lyssna på podcasten (7 minuter). Du kan lyssna så många gånger du vill. Du ska svara på 3 frågor: Vad är växthuseffekten, Vilken är den viktigaste orsaken till den globala uppvärmningen? Vad kan vi bland annat göra för att stoppa den globala uppvärmningen? Tips! Använd papper och penna för att skriva anteckningar medan du lyssnar.",
+      "question": "3 av 3. Vad kan vi bland annat göra för att stoppa den globala uppvärmningen?",
+      "incorrect_answers": [
+        "Kyla ner oss själva och inte bli för varma",
+        "Resa bara på sportlovet och inte på sommaren",
+        "Cykla istället för att springa"
+      ],
+      "correct_answer": "Gå över till förnyelsebar energi och minska köttkonsumtionen",
+      "feedback": "Vi kan minska våra utsläpp bl a genom att: Gå över till förnyelsebar energi istället för olja. Då släpper vi ut mycket mindre koldioxid, Äta mindre kött. Nötkreatur släpper ut väldigt mycket metangas, Sluta hugga ner skog. Träd binder koldioxid så den inte åker upp i atmosfären",
+      "source": "https://www.so-rummet.se/podcast/global-uppvarmning-orsaker-konsekvenser-och-losningar",
+      "sourceDescription": "Global uppvärmning, orsaker, konsekvenser och lösningar.",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": "podcast",
+        "image": false
+      }
+    },
+    {
+      "number": 8,
+      "introduction": "Världshaven täcker drygt 70 procent av jordens yta. Därför är haven viktiga för att reglera världens klimat. När vattnet blir varmare i havet förändras livet i havet. De arter som vill ha kallare vatten flyttar norrut  medan arter som kräver varmare vatten breder ut sig mer och mer. Det förändrar hela ekosystemet i havet. Värmeböljor i havet blir allt vanligare, vilket bland annat drabbar de temperaturkänsliga korallerna i tropiska vatten särskilt hårt. Korallerna behöver leva tillsammans med en viss typ av alger för att må bra. Dessa alger trivs inte och dör när vattnet blir för varmt. Detta gör att korallerna blir bleka och svälter ihjäl. När korallerna dör hotas en stor del av havets ekosystem. Många fiskar och andra havsdjur bor i korallreven och trivs inte någon annanstans.",
+      "question": "Vad skulle hända om korallreven försvinner?",
+      "incorrect_answers": [
+        "Det skulle bli lättare att fiska med nät",
+        "Vattentemperaturen skulle sjunka",
+        "Fiskar och andra havsdjur skulle trivas bättre"
+      ],
+      "correct_answer": "Många fiskar och andra havsdjur skulle dö ut",
+      "feedback": "Om korallreven försvinner skulle många fiskar och havslevande djur bli utan sitt hem. Korallreven är ett av jordklotets största ekosystem. Forskarna försöker just nu få fram en mer värmetålig algart som kan trivas i varmt vatten. Detta skulle kunna rädda korallerna från att dö ut.",
+      "source": "https://www.naturskyddsforeningen.se/faktablad/haven-ar-viktiga-for-klimatet/",
+      "sourceDescription": "Haven är viktiga för klimatet",
+      "media": {
+        "diagram": false,
+        "video": false,
+        "podcast": false,
+        "image": "image"
+      }
+    },
+    {
+      "number": 9,
+      "introduction": null,
+      "question": "Som du ser på grafen har koldioxidutsläppen ökat extremt mycket sedan 1900-talets mitt. Varför det?",
+      "incorrect_answers": [
+        "Det är fler vulkanutbrott som släpper ut koldioxid",
+        "Medelhavsnivån har ökat",
+        "Ozonlagret har blivit tunnare"
+      ],
+      "correct_answer": "Stor förbränning av fossila bränslen",
+      "feedback": "Förbränningen av fossila bränslen som kol och olja leder till ökade halter växthusgaser. Ca 80 procent av världens energiförbrukning kommer idag från fossila bränslen.",
+      "source": "https://www.wwf.se/klimat/mansklig-paverkan/ ",
+      "sourceDescription": "Mänsklig påverkan.",
+      "media": {
+        "diagram": "emissions",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
+    },
+    {
+      "number": 10,
+      "introduction": null,
+      "question": "Hur stor var ökningen av temperaturen år 2000?",
+      "incorrect_answers": [
+        "ca 0,55 grader celsius",
+        "ca 0 grader celsius",
+        "ca 7 grader celsius"
+      ],
+      "correct_answer": "ca 0,43 grader celsius",
+      "feedback": "År 2000 hade temperaturen ökat med 0,43 grader celsius. Idag år 2023 ligger vi på en ökning på 1,1 grader celsius. Konsekvenserna för världen vid en uppvärmning på 1,5 till 2 grader blir stora och kan då förväntas få extrema värmeböljor och stigande havsnivå.",
+      "source": [
+        "https://www.klimatpolitiskaradet.se/2023-klimatpolitiska-radets-rapport/",
+        "https://www.naturskyddsforeningen.se/artiklar/den-globala-uppvarmningens-konsekvenser/"
+      ],
+      "sourceDescription": "Den globala uppvärmningens konsekvenser.",
+      "media": {
+        "diagram": "temperatures",
+        "video": false,
+        "podcast": false,
+        "image": false
+      }
+    }
+  ]
+}
