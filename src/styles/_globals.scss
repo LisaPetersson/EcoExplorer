@@ -1,0 +1,162 @@
+html {
+  @include flex(column, center, center);
+}
+body {
+  background-color: rgb(36, 36, 36);
+  background-image: url(/src/assets/background/woods-min_1.webp);
+  // background-image: url(/src/assets/background/ocean3-min.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-family: var(--font);
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+  color: $white;
+}
+
+button {
+  letter-spacing: var(--letterSpacing);
+  word-spacing: var(--wordSpacing);
+}
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper,
+.css-1ab2xsx {
+  background-color: transparent !important;
+}
+
+main {
+  padding: $large;
+  gap: $large;
+  @include flex(column, center, center);
+  min-height: 80dvh;
+  max-width: 1200px;
+  margin: 0 auto;
+  > section {
+    @include glass();
+    @include flex(column, center, center);
+    gap: $large;
+    padding: $large;
+    width: 80%;
+    text-shadow: $textShadow;
+  }
+}
+
+button {
+  border-radius: $borderRadiusSmall;
+  border: none;
+  padding: $small;
+  background-color: $secondary;
+  color: $white;
+  width: 125px;
+  font-size: 1rem;
+  &:hover {
+    opacity: 100%;
+    cursor: pointer;
+  }
+}
+
+.primarybtn {
+  background-color: $primary;
+  &:hover {
+    background-color: $primaryHover;
+  }
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: var(--fontSizeHeader);
+}
+
+h2 {
+  margin: $small 0;
+}
+
+h3,
+h4 {
+  font-size: var(--fontSizeSubheader);
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--fontSizeP);
+}
+
+small {
+  font-size: var(--fontSizeSmall);
+}
+
+strong {
+  font-weight: 700;
+}
+.bold {
+  font-weight: 700;
+}
+
+form {
+  width: 100%;
+  @include flex(column, center, flex-start);
+  button {
+    width: 100%;
+    &:disabled {
+      opacity: $opacity;
+    }
+  }
+}
+input {
+  width: 100%;
+  height: 35px;
+  margin-bottom: $medium;
+  border: 0;
+  border-radius: $small;
+  padding: $small;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $secondary;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  background: $secondary;
+  width: 12.5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(173, 173, 173);
+  border-radius: 10px;
+}
+
+// for score animation
+
+.score {
+  transition: color 1s ease-out;
+  &.increase {
+    color: rgb(114, 255, 114);
+  }
+  &.decrease {
+    color: rgb(255, 116, 97);
+  }
+}
+
+@media screen and (max-width: 710px) {
+  main {
+    padding: $medium;
+    gap: $large;
+    text-align: center;
+    // @include flex(column, center, center);
+    min-height: 80dvh;
+    max-width: 100vw;
+    // margin: 0 auto;
+    > section {
+      // @include glass();
+      // @include flex(column, center, center);
+      gap: $medium;
+      padding: $medium;
+      width: 95%;
+    }
+  }
+}

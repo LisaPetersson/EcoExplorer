@@ -1,0 +1,52 @@
+// Fonts
+:root {
+  --font: "Poppins", serif;
+  --fontSizeHeader: 2rem;
+  --fontSizeSubheader: 1.25rem;
+  --fontSizeP: 1rem;
+  --fontSizeSmall: 0.75rem;
+  --letterSpacing: normal;
+  --wordSpacing: normal;
+  --backgroundImage: url(/src/assets//background/pexels-matthew-leland-822528.jpg);
+}
+
+// Colors
+$primary: #08594a;
+$primaryHover: #063c32;
+$primaryInactive: #409b8a;
+$secondary: #353535;
+$secondaryHover: #292929;
+$secondaryInactive: #868585;
+$white: #eeeeee;
+$opacity: 50%;
+
+// Spacing
+$XXsmall: 0.15rem;
+$Xsmall: 0.25rem;
+$small: 0.5rem;
+$medium: 1rem;
+$large: 2rem;
+$XLarge: 4rem;
+$XXLarge: 6rem;
+
+// Borders and shadows
+$borderRadiusLarge: 20px;
+$borderRadiusSmall: 10px;
+$textShadow: 1px 1px 5px #000000;
+
+// Mixins
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin glass() {
+  // background: rgba(255, 255, 255, 0.425);
+  background: rgba(0, 0, 0, 0);
+  border-radius: $borderRadiusLarge;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
